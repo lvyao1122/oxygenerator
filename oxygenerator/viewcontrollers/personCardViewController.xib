@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="personCardViewController">
@@ -29,16 +29,39 @@
                         <constraint firstAttribute="height" constant="2" id="f85-X6-gJD"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-id-Ffk">
+                    <rect key="frame" x="45" y="32" width="51" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345678909" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6W-Bv-G8o">
+                    <rect key="frame" x="126" y="32" width="429" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defultImage" translatesAutoresizingMaskIntoConstraints="NO" id="Voc-Nf-XoG">
+                    <rect key="frame" x="45" y="66" width="93" height="92"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="cgk-id-Ffk" firstAttribute="top" secondItem="9WE-uP-6wt" secondAttribute="bottom" constant="10" id="3Hq-6D-V74"/>
                 <constraint firstItem="CEZ-Hv-Pd3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="St2-Ap-8GG"/>
+                <constraint firstItem="cgk-id-Ffk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="WCd-nY-P3w"/>
                 <constraint firstAttribute="trailing" secondItem="9WE-uP-6wt" secondAttribute="trailing" id="Yl6-gl-T4M"/>
+                <constraint firstItem="m6W-Bv-G8o" firstAttribute="top" secondItem="9WE-uP-6wt" secondAttribute="bottom" constant="10" id="buc-SE-RAm"/>
                 <constraint firstItem="9WE-uP-6wt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jIC-Kn-zpw"/>
                 <constraint firstItem="9WE-uP-6wt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="pwh-ak-CBI"/>
+                <constraint firstItem="m6W-Bv-G8o" firstAttribute="leading" secondItem="cgk-id-Ffk" secondAttribute="trailing" constant="30" id="r2J-9W-AsA"/>
                 <constraint firstItem="CEZ-Hv-Pd3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="170" id="r66-BB-j8b"/>
                 <constraint firstAttribute="trailing" secondItem="CEZ-Hv-Pd3" secondAttribute="trailing" id="s1z-DH-9Bb"/>
+                <constraint firstAttribute="trailing" secondItem="m6W-Bv-G8o" secondAttribute="trailing" constant="45" id="uWS-mz-MLH"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="defultImage" width="81" height="82"/>
+    </resources>
 </document>
